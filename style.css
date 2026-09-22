@@ -1,4 +1,334 @@
-
 /* CSS basic BG demo*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-family: 'DM Sans', 'Montserrat', sans-serif;
+    --primary-color: rgb(248, 91, 34);
+    --secondary-color: #5e8cd2;
+    --background-color: rgb(252, 252, 222);
+    --text-color: #131926;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.page{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "container container"
+        "sidebar main"
+        "footer footer";
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: var(--primary-color);
+    padding: 15px 0px;
+    color: var(--background-color);
+    width: 100%;
+    grid-area: container;
+}
+
+.container .identity{
+    width: 500px;
+}
+
+.container h1{
+    font-family: var(--font-family);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container span{
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+.nav-links{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font-family);
+}
+
+.nav-links li, a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--background-color);
+}
+
+.nav-links a:hover{
+    background-color: #131926;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    min-width: 100%;
+    background-color: rgba(223, 73, 19, 0.187);
+    padding: 20px;
+}
+
+.sidebar h2 {
+    padding: 10px;
+    font-family: var(--font-family);
+}
+
+.sidebar p{
+    font-family: var(--font-family);
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.main{
+    grid-area: main;
+    padding: 20px 45px;
+}
+
+.my-info{
+    padding: 20px;
+}
+
+.my-info h3 {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: var(--font-family);
+}
+
+.about-image{
+    padding: 5px 0 10px;
+}
+
+.about-image img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about-image p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 0px 0 10px;
+}
+
+.caption{
+    font-family: 'Manrope' sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #555;
+}
 
 
+.table-container{
+    width: 100%;
+    height: 350px;
+}
+
+.table-container h3{
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: var(--font-family);
+}
+
+.table-caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px;
+}
+
+.table-caption p {
+    font-size: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background: var(--primary-color);
+    color: var(--background-color);
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    font-family: var(--font-family);
+}
+
+td a {
+    color: var(--primary-color);
+}
+
+tr:nth-child(even){
+    background-color: rgba(223, 73, 19, 0.187);
+}
+
+.interest{
+    width: 100%;
+    margin-top: 40px;
+    height: 500px;
+}
+
+.interest h3{
+    color: var(--primary-color);
+    font-size: 35px;
+    font-family: var(--font-family);
+}
+
+.hobbies-card{
+    margin-top: 30px;
+    margin-right: 70px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.interest-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(223, 73, 19, 0.187);
+    padding: 10px 15px;
+    border-radius: 10px;
+    
+}
+
+.interest-card h4{
+    font-family: var(--font-family);
+    font-size: 20px;
+}
+
+.interest-card p{
+    font-size: 20px;
+}
+
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer p {
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media (max-width: 480px){
+
+    .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .container .identity{
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+
+    .container h1{
+        font-size: 38px;
+        font-weight: 800;
+    }
+
+    .container span{
+        font-size: 20px;
+    }
+
+    .nav-links{
+        position: relative;
+        top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .nav-links li{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image p{
+        padding: 10px;
+    }
+}
