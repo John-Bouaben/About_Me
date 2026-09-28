@@ -3,10 +3,14 @@
 
 :root{
     --font-family: 'DM Sans', 'Montserrat', sans-serif;
-    --primary-color: rgb(248, 91, 34);
+    --primary-color: #0c0829;
     --secondary-color: #5e8cd2;
     --background-color: rgb(252, 252, 222);
     --text-color: #131926;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -33,6 +37,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 50px;
     background-color: var(--primary-color);
     padding: 15px 0px;
@@ -103,10 +108,10 @@ body{
 
 .main{
     grid-area: main;
-    padding: 20px 45px;
 }
 
 .my-info{
+    width: 100%;
     padding: 20px;
 }
 
@@ -143,7 +148,8 @@ body{
 
 .table-container{
     width: 100%;
-    height: 350px;
+    height: 450px;
+    padding: 20px ;
 }
 
 .table-container h3{
@@ -164,7 +170,7 @@ body{
 }
 
 table{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
 }
 
@@ -202,6 +208,7 @@ tr:nth-child(even){
     color: var(--primary-color);
     font-size: 35px;
     font-family: var(--font-family);
+    
 }
 
 .hobbies-card{
@@ -211,6 +218,9 @@ tr:nth-child(even){
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    position: relative;
+    top: 0;
+    left: 35px;
 }
 
 .interest-card{
@@ -299,6 +309,7 @@ tr:nth-child(even){
         gap: 5px;
         font-size: 18px;
         font-weight: 600;
+
     }
 
     .nav-links li{
@@ -319,6 +330,7 @@ tr:nth-child(even){
         justify-content: center;
         align-items: center;
         gap: 10px;
+        margin: 20px;
     }
 
     .about-image{
@@ -328,7 +340,33 @@ tr:nth-child(even){
         align-items: center;
     }
 
+    .about-image img{
+        height: 370px;
+        width: 370px;
+    }
+
     .about-image p{
         padding: 10px;
     }
+
+    .table-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0 50px;
+        height: 500px;
+    }
+
+    .interest{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hobbies-card{
+        width: 100%;
+    }
+
 }
