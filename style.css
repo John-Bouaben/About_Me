@@ -3,23 +3,16 @@
 
 :root{
     --font-family: 'DM Sans', 'Montserrat', sans-serif;
-<<<<<<< HEAD
-    --primary-color: rgb(248, 91, 34);
-=======
     --primary-color: #0c0829;
->>>>>>> master
     --secondary-color: #5e8cd2;
     --background-color: rgb(252, 252, 222);
     --text-color: #131926;
 }
 
-<<<<<<< HEAD
-=======
 html{
     scroll-behavior: smooth;
 }
 
->>>>>>> master
 *{
     margin: 0;
     padding: 0;
@@ -44,10 +37,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-<<<<<<< HEAD
-=======
     flex-wrap: wrap;
->>>>>>> master
     gap: 50px;
     background-color: var(--primary-color);
     padding: 15px 0px;
@@ -118,17 +108,10 @@ body{
 
 .main{
     grid-area: main;
-<<<<<<< HEAD
-    padding: 20px 45px;
-}
-
-.my-info{
-=======
 }
 
 .my-info{
     width: 100%;
->>>>>>> master
     padding: 20px;
 }
 
@@ -139,31 +122,19 @@ body{
 }
 
 .about-image{
-<<<<<<< HEAD
-    padding: 5px 0 10px;
-}
-
-.about-image img{
-    margin-top: 10px;
-=======
     padding: 10px 0 10px;
     display: flex;
     gap: 20px;
 }
 
 .about-image img{
->>>>>>> master
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
 .about-image p {
-<<<<<<< HEAD
-    font-size: 20px;
-=======
     font-size: 18px;
->>>>>>> master
     line-height: 1.6;
     margin: 0px 0 10px;
 }
@@ -171,25 +142,16 @@ body{
 .caption{
     font-family: 'Manrope' sans-serif;
     font-style: italic;
-<<<<<<< HEAD
-    font-size: 13px;
-    color: #555;
-=======
     font-size: 15px;
     color: #555;
     padding-left: 10px;
->>>>>>> master
 }
 
 
 .table-container{
     width: 100%;
-<<<<<<< HEAD
-    height: 350px;
-=======
     height: 400px;
     padding: 20px ;
->>>>>>> master
 }
 
 .table-container h3{
@@ -200,15 +162,9 @@ body{
 
 .table-caption{
     display: flex;
-<<<<<<< HEAD
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0 10px;
-=======
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
->>>>>>> master
 }
 
 .table-caption p {
@@ -246,30 +202,14 @@ tr:nth-child(even){
 
 .interest{
     width: 100%;
-<<<<<<< HEAD
-    margin-top: 40px;
-    height: 500px;
-=======
     height: 500px;
     padding: 20px;
->>>>>>> master
 }
 
 .interest h3{
     color: var(--primary-color);
     font-size: 35px;
     font-family: var(--font-family);
-<<<<<<< HEAD
-}
-
-.hobbies-card{
-    margin-top: 30px;
-    margin-right: 70px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-=======
     
 }
 
@@ -280,7 +220,6 @@ tr:nth-child(even){
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
->>>>>>> master
 }
 
 .interest-card{
@@ -289,15 +228,9 @@ tr:nth-child(even){
     justify-content: center;
     align-items: center;
     width: 100%;
-<<<<<<< HEAD
-    height: 150px;
-    background-color: rgba(223, 73, 19, 0.187);
-    padding: 10px 15px;
-=======
     height: 140px;
     background-color: rgba(223, 73, 19, 0.187);
     padding: 5px 15px;
->>>>>>> master
     border-radius: 10px;
     
 }
@@ -375,10 +308,6 @@ tr:nth-child(even){
         gap: 5px;
         font-size: 18px;
         font-weight: 600;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     }
 
     .nav-links li{
@@ -391,10 +320,7 @@ tr:nth-child(even){
         flex-direction: column;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
-=======
         width: 95%;
->>>>>>> master
     }
 
     .my-info{
@@ -403,10 +329,7 @@ tr:nth-child(even){
         justify-content: center;
         align-items: center;
         gap: 10px;
-<<<<<<< HEAD
-=======
         margin: 20px;
->>>>>>> master
     }
 
     .about-image{
@@ -416,12 +339,6 @@ tr:nth-child(even){
         align-items: center;
     }
 
-<<<<<<< HEAD
-    .about-image p{
-        padding: 11px;
-    }
-}
-=======
     .about-image img{
         height: 370px;
         width: 370px;
@@ -464,4 +381,3 @@ tr:nth-child(even){
 
     }
 }
->>>>>>> master
