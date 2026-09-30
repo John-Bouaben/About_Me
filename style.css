@@ -122,18 +122,19 @@ body{
 }
 
 .about-image{
-    padding: 5px 0 10px;
+    padding: 10px 0 10px;
+    display: flex;
+    gap: 20px;
 }
 
 .about-image img{
-    margin-top: 10px;
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
 
 .about-image p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     margin: 0px 0 10px;
 }
@@ -141,8 +142,9 @@ body{
 .caption{
     font-family: 'Manrope' sans-serif;
     font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
     color: #555;
+    padding-left: 10px;
 }
 
 
@@ -170,7 +172,7 @@ body{
 }
 
 table{
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -228,7 +230,7 @@ tr:nth-child(even){
     width: 100%;
     height: 140px;
     background-color: rgba(223, 73, 19, 0.187);
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 10px;
     
 }
@@ -319,6 +321,7 @@ tr:nth-child(even){
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 95%;
     }
 
     .my-info{
@@ -363,7 +366,19 @@ tr:nth-child(even){
     }
 
     .interest-card{
+        width: 100%;
         position: relative;
         left: 30px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer p {
+        color: var(--background-color);
+
     }
 }
